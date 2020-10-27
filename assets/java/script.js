@@ -41,17 +41,34 @@ let hour = parseInt(moment().format('HH'));
     
 //ADD FUNCTION FOR WHEN SAVE BUTTON IS CLICKED, INPUT IN TEXT AREA SAVES
 //LOOK INTO IF THIS CAN BE CONDENSED
-$(".saveBtn").on("click", function() {
+$("#9").on("click", function() {
     localStorage.setItem("nine", (($nineEl.val())));
+})
+$("#10").on("click", function() {
     localStorage.setItem("ten", (($tenEl.val())));
+})
+$("#11").on("click", function() {
     localStorage.setItem("eleven", (($elevenEl.val())));
+})
+$("#12").on("click", function() {
     localStorage.setItem("twelve", (($twelveEl.val())));
+})
+$("#13").on("click", function() {
     localStorage.setItem("one", (($oneEl.val())));
+})
+$("#14").on("click", function() {
     localStorage.setItem("two", (($twoEl.val())));
+})
+$("#15").on("click", function() {
     localStorage.setItem("three", (($threeEl.val())));
+})
+$("#16").on("click", function() {
     localStorage.setItem("four", (($fourEl.val())));
+})
+$("#17").on("click", function() {
     localStorage.setItem("five", (($fiveEl.val())));
 })
+
 
 //IF PAGE IS REFRESHED, INPUT STAYS ON PAGE
 // LOOK INTO IF THIS CAN BE CONDENSED
@@ -64,4 +81,33 @@ $("#two").append(localStorage.getItem("two"));
 $("#three").append(localStorage.getItem("three"));
 $("#four").append(localStorage.getItem("four"));
 $("#five").append(localStorage.getItem("five"));
+})
+
+// IF ERASE BUTTON IS CLICK, CLEAR DATA OF LINE WHEN REFRESHED
+$("#9c").on("click", function() {
+    localStorage.removeItem("nine");
+})
+$("#10c").on("click", function() {
+    localStorage.removeItem("ten");
+})
+$("#11c").on("click", function() {
+    localStorage.removeItem("eleven");
+})
+$("#12c").on("click", function() {
+    localStorage.removeItem("twelve");
+})
+$("#13c").on("click", function() {
+    localStorage.removeItem("one");
+})
+$("#14c").on("click", function() {
+    localStorage.removeItem("two");
+})
+$("#15c").on("click", function() {
+    localStorage.removeItem("three");
+})
+$("#16c").on("click", function() {
+    localStorage.removeItem("four");
+})
+$("#17c").on("click", function() {
+    localStorage.removeItem("five");
 })
