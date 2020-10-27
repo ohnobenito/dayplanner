@@ -69,8 +69,15 @@ textarea{
   padding: 10px;
   text-align: center;
   border-top: 1px dashed #000000;
+  display: inline-block;
 }
 .saveBtn {
   color: #151E3F;
   background-color: #D1D646;
+  display: inline-block;
+}
+.eraseBtn {
+  display: inline-block;
+  background-color: #D1D646;
+  color: #151E3F;
 }
