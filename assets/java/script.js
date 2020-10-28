@@ -19,6 +19,7 @@ let $fourEl = $("#four");
 let $fiveEl = $("#five");
 
 
+
 //CREATE FUNCTION TO DETERMINE TIME OF DAY
 let hour = parseInt(moment().format('HH'));
 
@@ -38,7 +39,7 @@ let hour = parseInt(moment().format('HH'));
             $(this).addClass("present");
         }
     })
-    
+ 
 //ADD FUNCTION FOR WHEN SAVE BUTTON IS CLICKED, INPUT IN TEXT AREA SAVES
 //LOOK INTO IF THIS CAN BE CONDENSED
 $("#9").on("click", function() {
@@ -67,11 +68,10 @@ $("#16").on("click", function() {
 })
 $("#17").on("click", function() {
     localStorage.setItem("five", (($fiveEl.val())));
-})
 
+}) 
 
 //IF PAGE IS REFRESHED, INPUT STAYS ON PAGE
-// LOOK INTO IF THIS CAN BE CONDENSED
 $("#nine").append(localStorage.getItem("nine"));
 $("#ten").append(localStorage.getItem("ten"));
 $("#eleven").append(localStorage.getItem("eleven"));
@@ -83,31 +83,40 @@ $("#four").append(localStorage.getItem("four"));
 $("#five").append(localStorage.getItem("five"));
 })
 
-// IF ERASE BUTTON IS CLICK, CLEAR DATA OF LINE WHEN REFRESHED
+// IF ERASE BUTTON IS CLICKED, CLEAR LINE & STORAGE
 $("#9c").on("click", function() {
+    $("#nine").val("");
     localStorage.removeItem("nine");
 })
 $("#10c").on("click", function() {
+    $("#ten").val("");
     localStorage.removeItem("ten");
 })
 $("#11c").on("click", function() {
+    $("#eleven").val("");
     localStorage.removeItem("eleven");
 })
 $("#12c").on("click", function() {
+    $("#twelve").val("");
     localStorage.removeItem("twelve");
 })
 $("#13c").on("click", function() {
+    $("#one").val("");
     localStorage.removeItem("one");
 })
 $("#14c").on("click", function() {
+    $("#two").val("");
     localStorage.removeItem("two");
 })
 $("#15c").on("click", function() {
+    $("#three").val("");
     localStorage.removeItem("three");
 })
 $("#16c").on("click", function() {
+    $("#four").val("");
     localStorage.removeItem("four");
 })
 $("#17c").on("click", function() {
+    $("#five").val("");
     localStorage.removeItem("five");
 })
