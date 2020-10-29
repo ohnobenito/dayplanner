@@ -36,7 +36,7 @@ textarea{
 }
 
 .row {
-  white-space: pre-wrap;
+  /*white-space: pre-wrap;*/
   height: 80px;
   border-top: 1px solid white;;
 }
@@ -70,15 +70,17 @@ textarea{
   padding: 10px;
   text-align: center;
   border-top: 1px dashed #000000;
-  display: inline-block;
+  size: 10px;
 }
 .saveBtn {
   color: #151E3F;
   background-color: #D1D646;
   display: inline-block;
+  size: 10px;
 }
 .eraseBtn {
   display: inline-block;
   background-color: #D1D646;
   color: #151E3F;
+  size: 10px;
 }
