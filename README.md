@@ -4,7 +4,8 @@
 https://ohnobenito.github.io/scheduler
 
 **GIF of deployed site**
-![](/assets/images/sched.gif)
+
+![](/assets/images/scheduler.gif)
 
 **Overview:**
 As a person with a busy schedule, I wanted to create a simple daily planner that can be used during the work day to help manage time more effectively. 
