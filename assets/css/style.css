@@ -1,10 +1,6 @@
-
+/* Header Elements */
 h1, .time {
   font-family: 'Fascinate', cursive;
-}
-.lead, textarea {
-  font-family: 'Manjari', sans-serif;
-  font-weight: 100;
 }
 .day {
   font-family: 'Fascinate', cursive;
@@ -17,16 +13,10 @@ h1, .time {
   color: #D1D646;
   font-size: larger;
 }
-textarea{
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-  width: 100%;
+.lead {
+  font-family: 'Manjari', sans-serif;
+  font-weight: 100;
 }
-
 .jumbotron {
   text-align: center;
   background-color: #151E3F;
@@ -35,17 +25,34 @@ textarea{
   border-bottom: 10px solid #F97068;
 }
 
-.row {
-  height: 80px;
-  border-top: 1px solid white;;
+/*Scheduler Elements */
+
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+  width: 100%;
+  font-family: 'Manjari', sans-serif;
+  font-weight: 100;
 }
 
+.row {
+  height: 80px;
+  border-top: 1px solid white;
+}
+
+/* Hour sections */
 .hour {
   background-color: #ffffff;
   color: #D1D646;
   border-top: 1px dashed #000000;
   text-align: center;
 }
+
+/* Elements based on time of day */
 
 .past {
   background-color: #F97068;
@@ -65,12 +72,7 @@ textarea{
   border-top: 1px dashed #000000;
 }
 
-.button {
-  padding: 10px;
-  text-align: center;
-  border-top: 1px dashed #000000;
-  size: 10px;
-}
+/* Buttons! */
 .saveBtn {
   color: #151E3F;
   background-color: #D1D646;
@@ -83,3 +85,4 @@ textarea{
   color: #151E3F;
   size: 10px;
 }
+
